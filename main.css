@@ -220,7 +220,7 @@ a.content-header-number:hover time,
     color: var(--red-600);
 }
 
-.vote--voted-positive .vote__button--minus,
+.vote--voted-positive .vote__button--plus,
 .vote--sum-positive .vote__value {
     color: var(--green-600);
 }
