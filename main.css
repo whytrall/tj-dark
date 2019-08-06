@@ -9,8 +9,10 @@
     --gray-200:#e1e4e8;
     --gray-100:#f6f8fa;
     
-    --blue-300:#79b8ff;
+    --blue-900:#05264c;
     --blue-900-5: rgba(5, 38, 76, .5);
+    --blue-800:#032f62;
+    --blue-300:#79b8ff;
     
     --purple-900-5: rgba(41, 19, 78, .5);
     
@@ -62,6 +64,18 @@ body, .sidebar, .live {
 /* borders */
 .ui-border--bottom, .ui-border--top, .ui-border--left, .ui-border--right {
     border-color: var(--gray-500);
+}
+
+/* inputs */
+.cdx-input, .codex-editor .form-text-input, .codex-editor .input, .editor__title,
+.ui_form--2 input[type=email], .ui_form--2 input[type=name], .ui_form--2 input[type=password], 
+.ui_form--2 input[type=text], .ui_form--2 select, .ui_form--2 textarea, .input-suggestion input {
+    border: 0!important;
+    box-shadow: initial!important;
+    background: var(--gray-600)!important;
+    border-bottom: 1px solid var(--gray-900)!important;
+    border-radius: 3px!important;
+    color: var(--gray-100)!important;
 }
 
 
@@ -126,7 +140,8 @@ body, .sidebar, .live {
     color: var(--gray-400);
 }
 
-.block-quote--centered, .block-quote--default, .block-incut, .quiz, .block-number, .andropov_link, .andropov_telegram, .andropov_tweet {
+.block-quote--centered, .block-quote--default, .block-incut, .quiz, .block-number, 
+.andropov_link, .andropov_telegram, .andropov_tweet, .block-warning {
     background: var(--gray-900);
     color: inherit!important;
     border: 0!important;
@@ -179,6 +194,15 @@ body, .sidebar, .live {
     border-color: var(--gray-500);
 }
 
+.comments_form__upload_images, .comments_form__video, .comments_pseudo_form__button {
+    background: var(--gray-600);
+}
+
+.comments_pseudo_form {
+    background: var(--gray-800);
+    border: 0;
+}
+
 /* widgets */
 .widget_wrapper--type-favorited, .widget_wrapper--type-top_commented_entries {
     background: var(--purple-900-5);
@@ -211,24 +235,25 @@ body, .sidebar, .live {
     background: var(--gray-600);
 }
 
-.cdx-input, .codex-editor .form-text-input, .codex-editor .input, .editor__title {
-    border: 0;
-    box-shadow: initial;
-    background: var(--gray-600);
-    border-bottom: 1px solid var(--gray-900);
-    border-radius: 3px;
-}
-
 .editor__title {
     color: var(--gray-100);
 }
 
-/* notifications */
+.editor__date, .editor__select {
+    color: inherit;
+}
+
+.adviser__container, .adviser__toggler, .adviser__container::after {
+    background-color: var(--gray-900);
+    border-color: var(--gray-700);
+}
+
+/* notifes on the top */
 #notify .notify__item--shown {
     background: var(--gray-700);
 }
 
-/* subreddit page */
+/* subreddit/user page */
 .subscribers_widget {
     color: var(--gray-400);
 }
@@ -237,8 +262,98 @@ body, .sidebar, .live {
     color: var(--gray-400);
 }
 
+.subsite_head__registration_date {
+    color: var(--gray-400);
+}
+
+.profile_comment_favorite {
+    border-color: var(--gray-500);
+}
+
+/* settings */
+.subsite_settings__section {
+    border-color: var(--gray-500);
+}
+
+.subsite_settings__section__title, .ui_form label, .subsite_settings__section__label {
+    color: var(--gray-100);
+}
+
 /* small editor */
 .small-editor__placeholder {
     background: var(--gray-700);
     box-shadow: initial;
+}
+
+.attaches__button {
+    background: var(--gray-800);
+}
+
+.attaches__button--with-label {
+    color: var(--gray-500);
+}
+
+/* notifications in header */
+.head-notifies__panel {
+    background: var(--gray-800);
+    box-shadow: 0 3px 5px 0 #252b31;
+}
+
+.head-notifies__header, .head-notifies__footer {
+    border-color: var(--gray-700);
+}
+
+.notification {
+    background: var(--gray-900);
+}
+
+.notification:hover {
+    background-color: var(--gray-800);
+}
+
+.notification--unread {
+    background-color: var(--blue-900)!important;
+}
+
+.notification--unread:hover {
+    background-color: var(--blue-800)!important;
+}
+
+.notification__footer, .notification__subject-toggler {
+    color: var(--gray-500);
+}
+
+.notification:not(:last-of-type) {
+    border-bottom: 1px solid var(--gray-800);
+}
+
+/* popups */
+.captcha_wall__box, .ui_modal_window {
+    background: var(--gray-800);
+}
+
+.ui_modal_window__footer, .ui_modal_window__header--border {
+    border-color: var(--gray-500);
+}
+
+.ui_modal_window--get_api_token .ui_modal_window__content input {
+    color: inherit;
+}
+
+/* /subs */
+.subsites_catalog__search, .subsites_catalog__label--bordered {
+    border-color: var(--gray-500);
+}
+
+.subsites_catalog_item:before {
+    background: var(--gray-500);
+}
+
+.subsites_catalog__label {
+    color: var(--gray-400);
+}
+
+.subsites_catalog__search__bar {
+    background: inherit;
+    color: inherit;
 }
