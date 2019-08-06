@@ -128,7 +128,7 @@ body,
 }
 
 .ui_sub_menu__item:hover, .etc_control__item:hover {
-    background: var(--gray-800);
+    background: var(--gray-800)!important;
 }
 
 
@@ -279,7 +279,7 @@ a.content-header-number:hover time,
     border: 0!important;
 }
 
-.andropov_link__host {
+.andropov_link__host, .content .content-image-caption__author {
     color: var(--gray-400);
 }
 
@@ -390,11 +390,12 @@ a.content-header-number:hover time,
 }
 
 .daily-promo-preview__item,
-.daily-promo-unit {
+.daily-promo-unit, 
+.widget_wrapper--type-best_comments, .widget_wrapper--type-popular_3_entries {
     background: var(--gray-900)!important;
 }
 
-.daily-promo-unit__button{
+.daily-promo-unit__button {
     background: var(--gray-800)!important;
     border: 0!important;
 }
@@ -475,6 +476,10 @@ a.content-header-number:hover time,
 
 .profile_comment_favorite__footer__reply {
     color: var(--gray-400);
+}
+
+.subsite_head .subsite_subscribe_button__inner {
+    background: var(--gray-800);
 }
 
 /* settings */
@@ -588,4 +593,13 @@ a.content-header-number:hover time,
 .subsites_catalog__search__bar {
     background: inherit;
     color: inherit;
+}
+
+/* booster */
+.b-form__unit_preview {
+    background: var(--gray-800);
+}
+.daily-promo-form .editable-field__input, .daily-promo-form .button-labeled__inner, .daily-promo-form .button-apps__inner,
+.daily-promo-form .b-form__unit_preview {
+    color: var(--gray-900)!important;
 }
