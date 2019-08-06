@@ -1,0 +1,179 @@
+:root {
+    --gray-900:#24292e;
+    --gray-800:#2f363d;
+    --gray-700:#444d56;
+    --gray-600:#586069;
+    --gray-500:#6a737d;
+    --gray-400:#959da5;
+    --gray-300:#d1d5da;
+    --gray-200:#e1e4e8;
+    --gray-100:#f6f8fa;
+    
+    --blue-300:#79b8ff;
+    --blue-900-5: rgba(5, 38, 76, .5);
+    
+    --purple-900-5: rgba(41, 19, 78, .5);
+    
+    --red-600:#cb2431;
+    
+    --green-600:#22863a;
+}
+
+
+/* Header */
+.main_menu, .live_head, .search_bar__field {
+    background: var(--gray-900);
+    color: var(--gray-100);
+}
+
+.main_menu__item {
+    color: var(--gray-100);
+}
+
+.search_bar__input {
+    background: var(--gray-800);
+}
+
+.possession_triangle:after {
+    border-top-color: var(--gray-100);
+}
+
+/* Main stuff */
+body, .sidebar, .live {
+    background: var(--gray-800);
+    color: var(--gray-100);
+}
+
+.layout--bg {
+    background: var(--gray-700);
+}
+
+/* links */
+#notify .notify__item p a, .andropov_telegram__text a, .andropov_tweet__text a, .best_comments__item__text a, .comments__item__text a, .content figcaption a, .content p a, .form2__field--advanced_list .advanced_list__list .adv_list_item a, .island__container--with_links a, .island__info a, .island__list__link, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .t-link-classic, .ui-page-header a {
+    color: var(--blue-300);
+    border-bottom: 1px solid rgba(33, 136, 255, 0.4);
+}
+
+.live__item--comment .live__item__date:hover, .live__item--comment .live__item__date:hover time, .profile_comment_favorite__title:hover, .profile_comment_favorite__title:hover time, .profile_comment_favorite__user:hover, .profile_comment_favorite__user:hover time, .profile_comment_self__title:hover, .profile_comment_self__title:hover time, .t-link:hover, .t-link:hover time, .vote--comment .vote__users__item:hover, .vote--comment .vote__users__item:hover time, a.content-header-author:hover, a.content-header-author:hover time, a.content-header-number:hover, a.content-header-number:hover time, .comments_counter:hover .comments_counter__count__unit, .comments_counter:hover .comments_counter__count__value, .comments_counter:hover .comments_counter__count__value_new, .live__item--comment .live__item__title span {
+    color: var(--blue-300);
+}
+
+/* feed */
+.news_item .time, .comments_counter__count__unit, .comments_counter__count__value, .comments_counter__count__ico svg,
+.news_widget__toggle, .news_widget__toggle .icon, .navigationDropdown__current__button, .navigationDropdown__current__link,
+.favorite_marker .icon, .vote .vote__button, .etc_control, .content-header-number {
+    color: var(--gray-400);
+    fill: var(--gray-400);
+}
+
+.vote--voted-negative .vote__button--minus, .vote--sum-negative .vote__value {
+    color: var(--red-600);
+}
+
+.vote--voted-positive .vote__button--minus, .vote--sum-positive .vote__value {
+    color: var(--green-600);
+}
+
+
+.ui-border--bottom {
+    border-color: var(--gray-500);
+}
+
+/* left sidebar */
+.sidebar__tree-list__title, .sidebar__tree-list__button, .sidebar__footer {
+    color: var(--gray-400)!important;
+}
+
+.sidebar__tree-list__item--active {
+    background-color: var(--gray-500)!important;
+}
+
+.sidebar__tree-list__item:not(.sidebar__tree-list__item--active):hover {
+    background-color: var(--gray-600)!important;
+}
+
+/* live */
+.content__thanks a span, .live__item--comment .live__item__content .live__item__text, .live__item--comment .live__item__user__name {
+    color: var(--gray-300);
+}
+.live__item--comment .live__item__date {
+    color: var(--gray-400);
+}
+
+/* post */
+.favorite_marker__count, .favorite_marker__title {
+    color: var(--gray-400);
+}
+
+.block-quote--centered, .block-quote--default, .block-incut, .quiz, .block-number {
+    background: var(--gray-900);
+}
+
+.content__thanks {
+    background: var(--gray-500);
+}
+
+.content-header-label {
+    background: var(--gray-500);
+}
+
+/* comments */
+.best_comments__body:after, .best_comments__header {
+    border-color: var(--gray-500);
+}
+
+.best_comments__body:after {
+    background-image: linear-gradient(to bottom,rgba(255,255,255,0),var(--gray-700));
+}
+
+.comments_form, .comments_form__textarea {
+    background: var(--gray-700);
+}
+
+.comments__item__self--author .comments__item__user__name .user_name {
+    background: var(--gray-500);
+}
+
+/* widgets */
+.widget_wrapper--type-favorited, .widget_wrapper--type-top_commented_entries {
+    background: var(--purple-900-5);
+}
+
+.vacancies_widget {
+    background: var(--blue-900-5);
+}
+
+.daily-promo-preview__item, .daily-promo-unit {
+    /* пока не придумал что с этим делать */
+    display: none!important;
+}
+
+/* editor */
+.editor__header {
+    background: var(--gray-700);
+}
+
+.ce-toolbar__tools, .ce-toolbar__tools-search-input {
+    background: var(--gray-800);
+    box-shadow: initial;
+}
+
+.ce-toolbar__tools-item--selected, .ce-toolbar__tools-item:hover {
+    background: var(--gray-700);
+}
+
+.ce-toolbar__tools-item--selected::before, .ce-toolbar__tools-item:hover::before {
+    background: var(--gray-600);
+}
+
+.cdx-input, .codex-editor .form-text-input, .codex-editor .input, .editor__title {
+    border: 0;
+    box-shadow: initial;
+    background: var(--gray-600);
+    border-bottom: 1px solid var(--gray-900);
+    border-radius: 3px;
+}
+
+.editor__title {
+    color: var(--gray-100);
+}
