@@ -17,6 +17,8 @@
     --red-600:#cb2431;
     
     --green-600:#22863a;
+    
+    --yellow-900:#735c0f;
 }
 
 
@@ -48,6 +50,21 @@ body, .sidebar, .live {
     background: var(--gray-700);
 }
 
+/* tabs */
+.ui-tab--active, .ui-tab--active .ui-tab__label {
+    color: var(--gray-100);
+}
+
+.ui-tab__counter {
+    color: var(--gray-400);
+}
+
+/* borders */
+.ui-border--bottom, .ui-border--top, .ui-border--left, .ui-border--right {
+    border-color: var(--gray-500);
+}
+
+
 /* links */
 #notify .notify__item p a, .andropov_telegram__text a, .andropov_tweet__text a, .best_comments__item__text a, .comments__item__text a, .content figcaption a, .content p a, .form2__field--advanced_list .advanced_list__list .adv_list_item a, .island__container--with_links a, .island__info a, .island__list__link, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .t-link-classic, .ui-page-header a {
     color: var(--blue-300);
@@ -74,11 +91,6 @@ body, .sidebar, .live {
     color: var(--green-600);
 }
 
-
-.ui-border--bottom {
-    border-color: var(--gray-500);
-}
-
 /* left sidebar */
 .sidebar__tree-list__title, .sidebar__tree-list__button, .sidebar__footer {
     color: var(--gray-400)!important;
@@ -100,13 +112,28 @@ body, .sidebar, .live {
     color: var(--gray-400);
 }
 
+.live__item--notification-comment_replied, .live__item--notification-entry_commented {
+    color: inherit;
+    background: var(--blue-900-5);
+}
+
+.live__item--notification:after, .live__item--notification:before {
+    background-color: var(--gray-700);
+}
+
 /* post */
 .favorite_marker__count, .favorite_marker__title {
     color: var(--gray-400);
 }
 
-.block-quote--centered, .block-quote--default, .block-incut, .quiz, .block-number {
+.block-quote--centered, .block-quote--default, .block-incut, .quiz, .block-number, .andropov_link, .andropov_telegram, .andropov_tweet {
     background: var(--gray-900);
+    color: inherit!important;
+    border: 0!important;
+}
+
+.andropov_link__host {
+    color: var(--gray-400);
 }
 
 .content__thanks {
@@ -115,6 +142,11 @@ body, .sidebar, .live {
 
 .content-header-label {
     background: var(--gray-500);
+}
+
+.content mark {
+    background: var(--yellow-900);
+    color: inherit;
 }
 
 /* comments */
@@ -128,10 +160,23 @@ body, .sidebar, .live {
 
 .comments_form, .comments_form__textarea {
     background: var(--gray-700);
+    color: inherit;
 }
 
 .comments__item__self--author .comments__item__user__name .user_name {
     background: var(--gray-500);
+}
+
+.comments__item__space--pinned, .comments__item__space--new, .comments__item__space--highlighted {
+    background: var(--gray-900);
+}
+
+.comments__item__date, .comments__item__replied_to, .comments__item__reply {
+    color: var(--gray-400);
+}
+
+.comments__item__children, .comments_form__textarea-holder {
+    border-color: var(--gray-500);
 }
 
 /* widgets */
@@ -176,4 +221,24 @@ body, .sidebar, .live {
 
 .editor__title {
     color: var(--gray-100);
+}
+
+/* notifications */
+#notify .notify__item--shown {
+    background: var(--gray-700);
+}
+
+/* subreddit page */
+.subscribers_widget {
+    color: var(--gray-400);
+}
+
+.hashtags_list .ui-tab__label, .popup__content--pay_invoice .form2__field label {
+    color: var(--gray-400);
+}
+
+/* small editor */
+.small-editor__placeholder {
+    background: var(--gray-700);
+    box-shadow: initial;
 }
