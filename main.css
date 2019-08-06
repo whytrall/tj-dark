@@ -28,6 +28,22 @@
     --pink-600: #d03592;
 }
 
+/*
+Более темные цвета.
+Чтобы использовать, надо раскоментировать
+:root {
+    --gray-900: #191919;
+    --gray-800: #252525;
+    --gray-700: #2d2d2d;
+    --gray-600: #4a4a4a;
+    --gray-500: #4c4c4c;
+    --gray-400: #828282;
+    --gray-300: #dfdfdf;
+    --gray-200: #e6e6e6;
+    --gray-100: #f6f8fa;
+    --gray-000: #fafbfc;
+}
+*/
 
 /* Header */
 .main_menu,
@@ -43,6 +59,10 @@
 
 .search_bar__input {
     background: var(--gray-800);
+}
+
+.search_bar__input:active, .search_bar__input:focus {
+    color: var(--gray-900);
 }
 
 .possession_triangle:after {
